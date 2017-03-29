@@ -22,11 +22,12 @@ def main():
                       access_token_key=access_token_key,
                       access_token_secret=access_token_secret)
 
-    #update_following(api)
-    #update_followers(api)
-    #update_list(api, "goodfollas", "ptfen")
-    #update_list(api, "ratio-killers", "ptfen")
-    #update_list(api, "irl", "ptfen")
+    update_following(api)
+    update_followers(api)
+    update_list(api, "goodfollas", "ptfen")
+    update_list(api, "ratio-killers", "ptfen")
+    update_list(api, "irl", "ptfen")
+    update_list(api, "tier-1-twitter", "ptfen")
 
     return 0
 
