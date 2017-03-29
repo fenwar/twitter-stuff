@@ -1,0 +1,24 @@
+# ENVIRONMENT SETUP:
+
+. .venv/bin/activate
+. tokens
+
+# EACH RUN:
+
+cp followers.txt prev_followers.txt
+./tw.py
+comm <(sort following.txt) <(sort followers.txt) -12 > mutuals.txt 
+comm <(sort following.txt) <(cat irl.txt followers.txt tier-1-twitter.txt ratio-killers.txt | sort -u) -23 | sort -n > who_to_unfollow.txt
+
+# THE KNOWLEDGE:
+
+# Who unfollowed me? (Also shows name changes & new follows)
+dw prev_followers.txt followers.txt -C0
+
+# People in the goodfollas list who are no longer mutuals:
+comm <(sort mutuals.txt) <(sort goodfollas.txt) -13
+
+# Mutuals who aren't in goodfollas:
+comm <(sort mutuals.txt) <(sort goodfollas.txt) -23
+
+
