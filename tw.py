@@ -24,8 +24,10 @@ def main():
 
     update_following(api)
     update_followers(api)
-    update_list(api, "goodfollas", "ptfen")
+    update_list(api, "parodies", "ptfen")
     update_list(api, "ratio-killers", "ptfen")
+    update_list(api, "goodfollas", "ptfen")
+    update_list(api, "watch-don-t-follow1", "ptfen")
     update_list(api, "irl", "ptfen")
     update_list(api, "tier-1-twitter", "ptfen")
 
