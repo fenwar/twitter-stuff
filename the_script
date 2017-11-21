@@ -9,6 +9,7 @@ cp followers.txt prev_followers.txt
 ./tw.py
 comm <(sort following.txt) <(sort followers.txt) -12 > mutuals.txt
 comm <(sort following.txt) <(cat irl.txt followers.txt tier-1-twitter.txt ratio-killers.txt | sort -u) -23 | sort -n > who_to_unfollow.txt
+comm <(sort following.txt) <(sort watch-don-t-follow1.txt) -12 > both_following_and_watching.txt
 
 # THE KNOWLEDGE:
 
