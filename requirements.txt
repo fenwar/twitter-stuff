@@ -7,4 +7,4 @@ pkg-resources==0.0.0
 python-twitter==3.4.1
 requests==2.20.0
 requests-oauthlib==0.8.0
-urllib3==1.24.2
+urllib3==1.26.5
